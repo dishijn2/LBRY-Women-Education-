@@ -1,0 +1,1067 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title> WOMED </title>
+<meta charset="UTF-8">
+<link rel="icon" href="ralph_lauren_logo.png" type="images/x-icon" >
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+#nav ul{
+  list-style-type:none;
+  background-color:black;
+}
+
+#nav>ul{
+overflow:hidden;
+  margin-top:-120px;
+}
+
+#nav>ul>li{
+  float:left;
+ }
+
+#nav ul>li>a{
+  text-decoration:none;
+  color:white;
+  display:block;
+  padding:18px;
+  font-size:25px;
+  margin-left:30px;
+}
+
+#nav{
+  position:-webkit-sticky;
+  position:sticky;
+  top:0;
+  z-index:4;
+ width:100%;
+ }
+
+
+#active{
+
+   background:linear-gradient(grey,black);
+ }
+
+#nav a:hover{
+   background-color:white;
+   color:black ;
+}
+
+
+#nav i{color:white;
+ margin-left:40px;}
+
+#nav i:hover{
+   color:black;
+   background-color:white;
+}
+
+
+
+#loc:hover #K{
+color:black;
+background-color:white;}
+
+.stor{
+display:none;
+color:black;
+background-color:rgba(240,240,240,1);
+padding:5px 15px;
+position:absolute;
+}
+
+.X:hover .stor {
+   display:block;
+}
+
+
+#sear{
+display:none;
+width:90%;
+height:100px;
+position:absolute;
+z-index:6;
+background-color:rgb(250,250,250);
+margin-left:-1120px;
+margin-top:10px;
+}
+
+.gallery  a{
+  float:left;
+  margin-top:320px;
+  margin-left:47px;
+  text-decoration:none;
+  text-align:center;
+  color:black;
+  }
+
+.gallery p{
+  border:1px solid black;
+  padding:10px;
+  margin-top:0px;
+}
+
+.gallery{
+  margin-bottom:730px;
+}
+
+.more a {
+position:relative;
+z-index:0;
+cursor:pointer;
+}
+
+
+.more img {
+background-color:white;
+}
+
+#foot{
+margin-top:100px;
+background-color:black;
+}
+
+
+#social{
+margin-left:400px;
+padding:25px 0px;
+}
+
+
+
+#social a{
+text-decoration:none;
+}
+
+
+#social div{
+float:left;
+margin-top:-10px;
+}
+
+#social i{
+margin:0px 25px;
+color:white;
+display:inline;
+font-size:20px;
+}
+
+
+
+#fac{
+display:none;
+}
+
+#face:hover #fac{
+display:block;
+}
+
+
+
+#link ul{
+list-style-type:none;
+margin-left:140px;}
+
+#link a{
+color:white;
+text-decoration:none;
+display:block;
+margin-bottom:10px;
+}
+
+#link p{
+color:white;
+font-size:20px;
+margin-left:170px;}
+
+#contact{
+color:white;
+margin-left:100px;
+font-size:20px;
+}
+
+#contact pre{
+margin:10px 0px;}
+
+.drop:hover .dropdown{
+display:block;}
+
+
+.dropdown {
+ display:none;
+ position:absolute;
+ z-index:8;
+ background:linear-gradient(black,grey);
+padding:30px;
+ }
+
+.dropdown a{
+
+  text-decoration:none;
+  color:white;
+  display:block;
+  padding:10px;
+  font-size:17px;
+  font-family:"times new roman";
+}
+
+
+.D{
+position:relative;
+}
+
+
+.hovp {
+
+margin:25px 24px;
+font-size:200px;
+font-weight:700;
+font-famiy: algerian,stencil,'sans-serif';
+cursor:pointer;
+position:relative;
+z-index:1;
+-webkit-transition: color 0.9s ease-out;
+transition: color 0.9s ease-out;
+}
+
+
+.hov{
+-webkit-transition: background-color 0.5s ease-in-out;
+transition:  background-color 0.5s ease-in-out;
+background-color:rgba(0,0,0,0);
+color:rgba(255,255,255,0);
+position:relative;
+z-index:1;
+}
+
+.hovimg img{
+cursor:pointer;
+
+}
+
+
+.hovimg img:hover{
+filter:brightness(10%);
+}
+
+
+.hovimg:hover .hov {
+background-color:rgba(0,0,0,1);
+color:rgba(255,255,255,1);
+}
+
+
+.gift{
+width:0px;
+transition: width 0.4s ease-out;
+-webkit-transition: width 0.4s ease-out;
+padding:8.5px 0px;
+float:left;
+font-size:20px;
+margin:0px 0px;
+cursor:pointer;
+background-color:rgba(240,240,240,1);
+color:rgba(0,0,0,0);
+}
+
+
+.gifts i:hover .gift{
+width:65px;
+padding-left:12px;
+}
+
+.gifts{
+cursor:pointer;
+width:45px;
+background-color:black;
+float:left;
+overflow:hidden;
+color:rgba(240,240,240,1);
+}
+
+.gifts:hover{
+margin-left:76px;
+}
+
+
+
+.gift:hover{
+width:65px;
+padding-left:5px;
+color:rgba(255,255,255,1);
+}
+
+
+
+.G:hover .gifts{
+margin-left:76px;
+}
+
+.G:hover .gift{
+width:65px;
+padding-left:5px;
+color:rgba(0,0,0,1);
+
+}
+
+
+.cont{
+background-color:rgba(0,0,0,1);
+width:0%;
+overflow:hidden;
+position:fixed;
+z-index:15;
+top:0px;
+left:0px;
+transition:0.5s;
+}
+
+.cont i{
+color:rgba(240,240,240,0.5);
+font-size:50px;
+margin:0% 90%;
+padding-top:30px;
+cursor:pointer;
+transition:0.5s;
+}
+
+.cont i:hover {
+color:white;
+}
+
+
+.content{
+display:block;
+padding:20px 0px;
+text-align:center;
+position:reltive;
+z-index:15;
+width:100%;
+}
+
+.content p{
+color:rgba(240,240,240,0.5);
+}
+
+
+.P{
+cursor:pointer;
+}
+
+input{
+padding:5px;
+}
+
+.G{
+width:10%;
+float:left;
+position:fixed;
+padding-left:2px;
+}
+
+
+
+#D{
+z-index:5;}
+
+#E{
+z-index:5;}
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+<div style="margin:114px 0px;" class="G P" id="E" onclick="openNa()" >
+  <a href="#"> <p class="gift">SignUp</p></a>
+  <div class="gifts" >
+    <i class="fa fa-user" style="font-size:40px;padding:0px 8px"></i>
+  </div>
+</div>
+
+<div class="cont" id="Sign">
+  <i onclick="closeNa()" class="fa fa-times" ></i>
+  <img src="https://drive.google.com/uc?id=1onCvU0lIY5aqZUQ5ilop56lTVg7OmbZN" width="350px" height="130px" alt="WOMED" style="margin:20px 37%;position:relative;">
+<div class="content">
+    <form action="form.php" method="POST">
+      <p style="margin-top:0px;">Username</p>
+      <input type="text" name="username"  size="50" placeholder="Username" > </input>
+      <p>Mail Id</p>
+      <input type="mail" name="mail_id"  size="50" placeholder="Mail-Id" > </input>
+      <p>Password</p>
+      <input type="password" name="password" size="50"  placeholder="Password"> </input>
+      <p><br/></p>
+      <input type="Submit" value="Submit" style="padding:6px 50px"></input>
+      <br/>
+      <p> Already have an account?  <a href="#" style="color:white;text-decoration:none;"   onclick="openNav()"> Log_In</a></p>
+      </form>
+   </div>
+</div>
+
+
+
+
+<div style="margin:254px 0px;" class="G P " id="D" onclick="openNav()">
+  <a href="#"> <p class="gift">LogIn</p></a>
+  <div class="gifts" >
+    <i class="fa fa-user-circle-o" style="font-size:40px;padding:0px 3px"></i>
+  </div>
+</div>
+
+<div class="cont" id="Log">
+  <i onclick="closeNav()" class="fa fa-times"> </i>
+  <img src="https://drive.google.com/uc?id=1onCvU0lIY5aqZUQ5ilop56lTVg7OmbZN"  width="350px" height="130px" alt="WOMED" style="margin:20px 37%;position:relative;">
+ <div class="content">
+    <form action="form1.php" method="POST">
+      <p>Username</p>
+      <input type="text" name="mail_id" size="50" placeholder="mail_id" > </input>
+      <p>Password</p>
+      <input type="password" name="password" size="50" placeholder="Password"> </input>
+      <p><br/></p>
+      <input type="Submit" value="Submit" style="padding:6px 50px"></input>
+      <p><br/></p>
+      <a href="#" style="text-decoration:none;color:white">Forgot Password ?</a>
+      <p style="margin-bottom:0px;padding-bottom:10px;"> Don't have an account?   <a href="#" style="color:white;text-decoration:none;"  onclick="openNa()"> Sign_In</a></p>
+    </form>
+  </div>
+
+</div>
+
+
+
+<div style="margin:394px 0px" class="G">
+  <a href="https://www.ralphlauren.com/gifts?categoryId=115384556"> <p class="gift">FAQ's</p></a>
+  <div class="gifts" >
+    <i class="fa fa-comments-o" style="font-size:40px;padding:0px 5px"></i>
+  </div>
+</div>
+
+
+
+
+<div style="margin:514px 0px"  class="G">
+  <a href="https://www.facebook.com/pg/RalphLauren/events/"><p class="gift" >EVENT</p></a>
+  <div class="gifts" >
+    <i class="fa fa-television" style="font-size:30px;padding:5px 8px"></i>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="background-image:url('https://drive.google.com/uc?id=1A11nD-IoI_bDOihxqdqAfzTMM2G4bflS') ;background-repeat:no-repeat;background-size:cover;-webkit-background-size:cover;-o-background-size:cover;background-attachment:fixed;height:620px; width:100%">
+  <p>
+    <br/>
+  </p>
+  <div style="margin-left:485px;margin-top:300px"><img src="https://drive.google.com/uc?id=1onCvU0lIY5aqZUQ5ilop56lTVg7OmbZN" width="370px" height="140px"/>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="nav">
+  <ul>
+    <li>
+       <a href="#" id="active"> Home  </a>
+    </li>
+    <li>        <a href="About_us.html">About Us  </a>
+    </li>
+    <li class="drop" >
+       <a href="school6.html"  class="D" >Maths </a>
+<div style=" margin-left:-279px;" class="dropdown">
+<div style="float:left;">
+<p style="font-size:20px;color:white;"><a href="#" style="font-size:20px;"> Linear Algebra </a></p>
+
+<a href="#">Variables</a>
+<a href="#">Exponents</a>
+<a href="#">Order of Operations</a>
+<a href="#">Polynomials</a>
+<a href="#">Solving equations</a>
+<a href="#">Quadratic Equations</a>
+<a href="#">Functions</a>
+<a href="#">Logarithms</a>
+<a href="#">Matrix row operations</a>
+<a href="#">Determinants</a>
+</div>
+
+
+
+<div style="float:left;margin-left:25px">
+<p style="color:white;margin-left:3px;"><a href="#" style="font-size:20px;"> Trignometry </a> </p>
+
+<a href="#">Trignometric Functions</a>
+<a href="#">Trignometric Identities</a>
+<a href="#">Proof of Trignometric Identities</a>
+<a href="#">Inverse Trignometric Functions</a>
+<a href="#">Exsecant</a>
+<a href="#">Solution of triangle</a>
+<a href="#">Polar sines</a>
+<a href="#">Euler's formula</a>
+<a href="#">Half angle formulae</a>
+<a href="#">Pythogorean theorem</a>
+
+
+</div>
+
+
+<div style="float:left;margin-left:25px">
+<p style="font-size:20px;color:white;"> <a href="#" style="font-size:20px;">Calculus</a> </p>
+
+<a href="#">Limits</a>
+<a href="#">Derivatives</a>
+<a href="#">Notations</a>
+<a href="#">Important Rules</a>
+<a href="#">Differential Equation</a>
+<a href="#">Integral calculas</a>
+<a href="#">Types of derivative</a>
+<a href="#">Types of integral</a>
+</div>
+
+
+<div style="float:left;margin-left:25px">
+<p style="font-size:20px;color:white;"> <a href="#" style="font-size:20px;">Geometry</a> </p>
+
+<a href="#">Polygons</a>
+<a href="#">Parallel lines</a>
+<a href="#">Triangles</a>
+<a href="#">Cirles</a>
+<a href="#">Hyperbola</a>
+<a href="#">Parabola</a>
+<a href="#">Quadrilaterals</a>
+<a href="#">3D-objects</a>
+<a href="#">Perimeter and Area</a>
+</div>
+
+
+<img src="https://drive.google.com/uc?id=16Kg0L4YWr1HhWUbo0sfDy4xyjU15i55e" alt="Math" style=";margin-top:30px;width:350px;float:left;margin-left:20px;margin-right:10px">
+
+</div>
+</li>
+    <li class="drop" >
+       <a href="school6.html" class="D">Science</a>
+
+<div style=" margin-left:-400px;" class="dropdown">
+<div style="float:left;">
+<p style="font-size:20px;color:white;"><a href="#" style="font-size:20px;"> Physics </a></p>
+
+<a href="#">Fundamentals</a>
+<a href="#">Heat transfer</a>
+<a href="#">Thermodynaics</a>
+<a href="#">Kinematics</a>
+<a href="#">Mechanics</a>
+<a href="#">Electricity</a>
+<a href="#">Magnetism</a>
+<a href="#">Oscilation</a>
+<a href="#">Waves</a>
+<a href="#">Optics</a>
+
+</div>
+
+<div style="float:left;margin-left:69px">
+<p style="color:white;margin-left:3px;"><a href="#" style="font-size:20px;"> Chemistry </a> </p>
+
+<a href="#">Atomic Structure</a>
+<a href="#">Electrochemistry</a>
+<a href="#">Thermochemistry</a>
+<a href="#">Chemical Bonding</a>
+<a href="#">Periodic Table</a>
+<a href="#">Solutions</a>
+<a href="#">Solid States</a>
+<a href="#">Corrosion</a>
+<a href="#">Water</a>
+</div>
+
+
+<div style="float:left;margin-left:69px">
+<p style="font-size:20px;color:white;"> <a href="#" style="font-size:20px;">Biology</a> </p>
+
+<a href="#">Diffusion</a>
+<a href="#">Macromolucules</a>
+<a href="#">Evolution</a>
+<a href="#">Cell Biology</a>
+<a href="#">Homeostasis</a>
+<a href="#">Immunology</a>
+<a href="#">Virology</a>
+
+</div>
+
+
+<div style="float:left;margin-left:69px">
+<p style="font-size:20px;color:white;"> <a href="#" style="font-size:20px;">Botany</a> </p>
+
+<a href="#">Study of Fungi</a>
+<a href="#">Bacteriology</a>
+<a href="#">Plants Genetics</a>
+<a href="#">Mycology</a>
+<a href="#">Bryology</a>
+<a href="#">Plant Pathology</a>
+<a href="#">Cell Biology</a>
+<a href="#">Biochemistry</a>
+<a href="#">Anatomy</a>
+<a href="#">Physiology</a>
+</div>
+
+
+
+<img src="https://drive.google.com/uc?id=1Ns6yPgAk4mkeURNMmKjzk8oyyj7V2dHJ" alt="CHEMISTRY" style="margin-left:71px;width:350px;margin-top:25px;float:left;margin-right:10px">
+
+</div>
+
+
+</li>
+    <li class="drop" >
+       <a href="school6.html" class="D">Humanities</a>
+<div style=" margin-left:-554px;" class="dropdown">
+<div style="float:left;">
+<p style="font-size:20px;color:white;"><a href="#" style="font-size:20px;"> History </a></p>
+
+<a href="#">Veitnam War</a>
+<a href="#">Russian War</a>
+<a href="#">Women Independence</a>
+<a href="#">Emerging India</a>
+<a href="#">Clothing</a>
+<a href="#">World War 1</a>
+<a href="#">World War 2</a>
+<a href="#">Culture</a>
+
+</div>
+
+
+<div style="float:left;margin-left:35px">
+<p style="color:white;margin-left:3px;"><a href="#" style="font-size:20px;"> Civics </a> </p>
+
+<a href="#">Human rights</a>
+<a href="#">Democracy</a>
+<a href="#">Equality</a>
+<a href="#">Constitution of India</a>
+<a href="#">Religion</a>
+<a href="#">Freedom</a>
+<a href="#">Law of Justice</a>
+<a href="#">Judiciary</a>
+
+</div>
+
+
+<div style="float:left;margin-left:35px">
+<p style="font-size:20px;color:white;"> <a href="#" style="font-size:20px;">Geography</a> </p>
+
+<a href="#">India size and location</a>
+<a href="#">Climate of India</a>
+<a href="#">Natural Vegetation</a>
+<a href="#">Wildlife</a>
+<a href="#">Popution of India</a>
+<a href="#">Disaster Management</a>
+<a href="#">Physical Features of India</a>
+<a href="#">Industries</a>
+
+</div>
+
+<div style="float:left;margin-left:35px">
+<p style="font-size:20px;color:white;"> <a href="#" style="font-size:20px;">Economics</a></p>
+
+<a href="#">Demand</a>
+<a href="#">Supply</a>
+<a href="#">Human Capital</a>
+<a href="#">Poverty</a>
+<a href="#">Rural Development</a>
+<a href="#">LPG</a>
+<a href="#">Indian Economy</a>
+<a href="#">Employment</a>
+<a href="#">Infrastructure</a>
+</div>
+
+
+<img src="https://drive.google.com/uc?id=1iC-RdYKTnlkIxoyO9xj6ZMFQYdW8BAae" alt="KIDS" style="margin-left:34px;width:350px;margin-top:25px;float:left;margin-right:10px">
+
+</div>
+</li>
+
+
+<li class="drop">
+    <a href="school6.html" class="D">Engineering</a>
+<div style=" margin-left:-717px;" class="dropdown">
+<div style="float:left;">
+<p style="font-size:20px;color:white;"><a href="#" style="font-size:20px;"> Computer Science </a></p>
+
+<a href="#">Programming</a>
+<a href="#">Web Development</a>
+<a href="#">DBMS</a>
+<a href="#">Data Structure </a>
+<a href="#">Algorithms</a>
+<a href="#">Operating System</a>
+<a href="#">Software Design</a>
+<a href="#">Networks</a>
+
+</div>
+
+
+<div style="float:left;margin-left:50px">
+<p style="color:white;margin-left:3px;"><a href="#" style="font-size:20px;"> Mechanical </a> </p>
+
+<a href="#">Fluids</a>
+<a href="#">Thermodynamics</a>
+<a href="#">Thermal</a>
+<a href="#">Materials</a>
+<a href="#">Mechanics</a>
+<a href="#">Engineering Drawing</a>
+
+</div>
+
+<div style="float:left;margin-left:50px">
+<p style="font-size:20px;color:white;"> <a href="#" style="font-size:20px;">Electrical</a> </p>
+
+<a href="#">Semiconductors</a>
+<a href="#">Signal and System</a>
+<a href="#">Sensors</a>
+<a href="#">ACS</a>
+<a href="#">LIC</a>
+<a href="#">Network Theory</a>
+</div>
+
+<img src="https://drive.google.com/uc?id=1eFTaznVGrIGnnXpecuV0Utf67fs-EFTI" alt="Engineer" style="margin-left:50px;width:450px;height:300px;margin-top:25px;float:left;">
+</div>
+    </li>
+
+<li>
+    <a href="Contact_Us.html">Contact Us</a>
+    </li>
+
+<li class="X">
+      <a href="school6.html"  id="loc" style="padding:0px 10px;margin-top:10px;position:relative;"><i class="fa fa-upload" id="K" style="font-size:30px;padding:10px 0px;margin:0px 5px;"></i></a>
+    <p class="stor" style="margin-left:21px">Upload</p>
+</li>
+
+<li class="X">
+       <a href="#" id="loc" style="padding:0px 5px;margin-top:10px;position:relative;cursor:pointer" onclick="openS()" ><i class="fa fa-search" style="font-size:27px;padding:10px 0px;margin:0px 5px;" onclick="openS" id="K"></i></a>
+        <p class="stor" style="margin-left:21px">Search</p>
+
+
+<div  align="center" id="sear">
+
+<i class="fa fa-times" style="color:rgba(0,0,0,0.5);font-size:20px;margin-left:1150px;margin-top:20px;cursor:pointer" onclick="closeS()" ></i>
+<br/>
+<i class="fa fa-search" style="border:none;padding:7px 10px;font-size:25px;color:grey;margin:-10px 0px 0px;border-bottom:1px solid grey;"> </i><input type="Search" name="Search" size="75" placeholder="Search"  style="border:none;padding:5px 10px;font-size:25px;margin:-10.5px -0px;border-bottom:1px solid grey; background-color:rgb(250,250,250);" ></input>
+</div>
+</li>
+
+
+
+
+   </ul>
+</div >
+
+
+<div style="width:80%;margin-left:130px;">
+<div style="margin-top:230px;background-color:rgba(150,150,150,0.3)">
+
+  <div class="hovimg">
+    <img   src="https://drive.google.com/uc?id=153M-gyVrA77jAliBtgk1CKI9enknJEfv" alt="Maths" width="250px" height="250px" style="border-radius:50%;margin-top:-100px;margin-left:30px;"/>
+<div style="width:250px; height:250px;border-radius:50%;margin-top:-278px;margin-left:30px"class="hov">
+<p class="hovp" > M </p>
+</div>
+    <p style="margin:-154px 550px;font-size:40px;padding:7px;font-weight:700;font-famiy:stencil,'sans-serif';color:black;"> MATHS </p>
+  </div>
+
+</div>
+
+  <div class="gallery">
+
+    <a href="school6.html">
+       <img  src="https://drive.google.com/uc?id=1osUIYs-D8MlCJ7u9kxJ4_5cIlD4_ObEd" height="100px">
+       <p> Linear Algerbra  </p>
+    </a>
+
+    <a href="#">
+      <img src="images (9).jpg"  height="300px">
+      <p> Trignometry  </p>
+    </a>
+
+    <a href="#">
+      <img src="images (14).jpg"  height="300px">
+      <p> Calculus </p>
+    </a>
+
+    <a href="#">
+      <img src="images (1).jpeg"  height="300px">
+      <p>Geometry </p>
+    </a>
+
+  </div>
+
+<div class="more"> <a href="school6.html" > <img src="36565.png"  style="width:20px;height;50px;transform:rotate(90deg);margin-left:500px;padding:20px;border-radius:50%;border:1px solid black;"></a>
+</div>
+
+<hr style="position:relative;z-index:-2;margin-top:-35px"/>
+</div>
+
+<div style="width:80%;margin-left:130px;">
+<div style="margin-top:170px;background-color:rgba(150,150,150,0.3);">
+
+
+<div class="hovimg">
+    <img   src="https://drive.google.com/uc?id=1wENM5DwrWUFBOD6QTXX-EE-av4pdji84" alt"Science" width="250px" height="250px" style="border-radius:50%;margin-top:-100px;margin-left:30px;"/>
+<div style="border-radius:50%;margin-top:-279px;margin-left:30px;width:250px; height:250px;"class="hov">
+<p class="hovp" style="margin:25px 75px;" > S </p>
+</div>
+    <p style="margin:-154px 600px;font-size:40px;font-weight:700;padding:7px;font-famiy:stencil,'sans-serif';color:black;"> SCIENCE </p>
+  </div>
+
+</div>
+  <div class="gallery">
+
+    <a href="#">
+       <img  src="images (21).jpg" height="300px">
+       <p> Physics</p>
+    </a>
+
+    <a href="#">
+      <img src="images (25).jpg"  height="300px">
+      <p> Chemistry</p>
+    </a>
+
+    <a href="#">
+      <img src="images (23).jpg"  height="300px" width="200px">
+      <p>Biology </p>
+    </a>
+
+    <a href="#">
+      <img src="download.jpeg"  height="300px"  width="230px">
+      <p>Botany </p>
+    </a>
+
+  </div>
+<div class="more"> <a href="school6.html"> <img src="36565.png"  style="width:20px;height;50px;transform:rotate(90deg);margin-left:500px;padding:20px;border-radius:50%;border:1px solid black;"></a>
+</div>
+
+<hr style="position:relative;z-index:-2;margin-top:-35px"/>
+</div>
+
+<div style="width:80%;margin-left:130px;">
+<div style="margin-top:170px;background-color:rgba(150,150,150,0.3);">
+
+<div class="hovimg">
+    <img   src="https://drive.google.com/uc?id=1MRwU8pJlaHWSP_lD6swFY_f5emIGGvD_" alt"Humanities" width="250px" height="250px" style="border-radius:50%;margin-top:-100px;margin-left:30px;"/>
+<div style="border-radius:50%;margin-top:-279px;margin-left:30px;width:250px; height:250px;"class="hov">
+<p class="hovp"  style="margin:25px 45px;font-family:230px"> H </p>
+</div>
+    <p style="margin:-154px 540px;font-size:40px;font-weight:700;padding:7px;font-famiy:stencil,'sans-serif';color:black;">HUMANITIES</p>
+  </div>
+
+</div>
+  <div class="gallery">
+
+    <a href="#">
+       <img  src="images (26).jpg" height="300px">
+       <p> History </p>
+    </a>
+
+    <a href="#">
+      <img src="download (12).jpg"  height="300px">
+      <p>Civics</p>
+    </a>
+
+    <a href="#">
+      <img src="images (41).jpg"  height="300px" width="200px">
+      <p>Geography</p>
+    </a>
+
+ <a href="#">
+      <img src="images.jpeg"  height="300px" width="230px">
+      <p>Economics </p>
+    </a>
+
+  </div>
+<div class="more"> <a href="school6.html" > <img src="36565.png"  style="width:20px;height;50px;transform:rotate(90deg);margin-left:500px;padding:20px;border-radius:50%;border:1px solid black;"></a>
+</div>
+
+<hr style="position:relative;z-index:-2;margin-top:-35px"/>
+</div><div style="width:80%;margin-left:130px;">
+<div style="margin-top:170px;background-color:rgba(150,150,150,0.3);">
+
+<div class="hovimg">
+    <img   src="engineer.png" alt"Engineering" width="250px" height="250px" style="border-radius:50%;margin-top:-100px;margin-left:30px;"/>
+<div style="border-radius:50%;margin-top:-279px;margin-left:30px;width:250px; height:250px;"class="hov">
+<p class="hovp"  style="margin:25px 55px;font-family:230px"> E </p>
+</div>
+    <p style="margin:-154px 540px;font-size:40px;font-weight:700;padding:7px;font-famiy:stencil,'sans-serif';color:black;">ENGINEERING</p>
+  </div>
+
+</div>
+  <div class="gallery">
+
+    <a href="#">
+       <img  src="images (26).jpg" height="300px">
+       <p> Computer Science</p>
+    </a>
+
+    <a href="#">
+      <img src="download (12).jpg"  height="300px">
+      <p> Mechanical</p>
+    </a>
+
+    <a href="#">
+      <img src="images (41).jpg"  height="300px" width="200px">
+      <p>Electrical </p>
+    </a>
+
+ <a href="#">
+      <img src="images.jpeg"  height="300px" width="230px">
+      <p>ACCESSORIES  </p>
+    </a>
+
+  </div>
+<div class="more"> <a href="school6.html" > <img src="36565.png"  style="width:20px;height;50px;transform:rotate(90deg);margin-left:500px;padding:20px;border-radius:50%;border:1px solid black;"></a>
+</div>
+
+<hr style="position:relative;z-index:-2;margin-top:-35px"/>
+</div>
+
+<div id="foot">
+
+  <div style="width:100%">
+   <div  style="float:left" ><img src="https://drive.google.com/uc?id=1onCvU0lIY5aqZUQ5ilop56lTVg7OmbZN" alt="RALPH LAUREN" style="sheight:auto;margin:20px 70px ;width:250px ">
+  <p style=" margin:20px 40px;color:white;font-size:30px;text-align:center;">WOMED</p> </div>
+
+
+<div id="contact" style="float:left;width:30%" >
+
+    <p style="font-size:30px;">CONTACT US</p>
+
+    <pre><i class="fa fa-phone">  +91-9680899499 , 7348925280 </i></pre>
+    <br/>
+    <pre><i class="fa fa-envelope"> mohitesaurabh650@gmail.com</i></pre>
+    <br/>
+    <pre><i class="fa fa-map-marker">  K-704,mens hostel,
+    Vellore Institute of Technology,Vellore,632014
+    India
+    </i>
+    </pre>
+    <br/>
+
+  </div>
+
+  <div id="link" style="float:left;width:30%" >
+  <p style="font-size:30px;">LINK</p>
+  <ul>
+    <a href="https://www.universityoffashion.com/blog/tag/ralph-lauren/"><li> Blogs </li></a>
+    <a href="#"><li> FAQ's </li></a>
+    <a href="#"><li> Services </li></a>
+    <a href="#"><li> Jobs</li></a>
+    <a href="#"><li> Privacy Policy</li></a>
+    <a href="#"><li> Terms and Conditions </li></a>
+    </ul>
+    </div>
+</div>
+
+<hr style="color:white;margin-top:10px;width:100%;"/>
+    <div id="social">
+    <div id="face"><a href="https://www.facebook.com/RalphLauren/"><i class="fa fa-facebook " ></i></a><p style="color:white;margin-top:2px" id="fac">facebook</p></div>
+    <div id="face"><a href="https://www.instagram.com/ralphlauren/?hl=en"><i class="fa fa-instagram "></i></a><p style="color:white;margin-top:2px" id="fac">Instagram</p></div>
+    <div id="face"><a href="https://www.youtube.com/channel/UCWpf8dFplG_k7HTTQBVllsA"><i class="fa fa-youtube"></i></a><p style="color:white;margin-top:2px;margin-left:4px;" id="fac">Youtube</p></div>
+    <div id="face"><a href="https://in.linkedin.com/company/ralph-lauren"><i class="fa fa-linkedin "></i></a><p style="color:white;margin-top:2px;margin-left:5px;" id="fac">LinkedIn</p></div>
+    <div id="face"><a href="https://twitter.com/RalphLauren?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter "></i></a><p style="color:white;margin-top:2px;margin-left:9px;" id="fac">Twitter</p></div>
+    <div id="face"><a href="https://plus.google.com/+RalphLauren"><i class="fa fa-google-plus "></i></a><p style="color:white;margin-top:2px;margin-left:9px;" id="fac">Google+</p></div>
+    <div id="face"><a href="https://www.pinterest.com/ralphlauren/"><i class="fa fa-pinterest-p "></i></a><p style="color:white;margin-top:2px;margin-left:4px;" id="fac">Pinterest</p></div>
+    <div id="face"><a href="https://www.tumblr.com/tagged/polo-ralph-lauren"><i class="fa fa-tumblr"></i></a><p style="color:white;margin-top:2px;margin-left:7px;" id="fac">Tumblr</p></div>
+    </div>
+<br/>
+
+
+</div>
+
+
+<script>
+function openNav() {
+
+	document.getElementById("Log").style.width="100%";
+	document.getElementById("Log").style.zIndex="6";
+       document.getElementById("Sign").style.zIndex="5";
+
+}
+
+function closeNav() {
+	document.getElementById("Log").style.width="0%";
+	document.getElementById("Log").style.zIndex="5";
+	}
+
+
+function openNa() {
+	document.getElementById("Sign").style.width="100%";
+	document.getElementById("Log").style.zIndex="5";
+       document.getElementById("Sign").style.zIndex="6";
+	}
+
+function closeNa() {
+	document.getElementById("Sign").style.width="0%";
+	document.getElementById("Sign").style.zIndex="5";
+}
+
+
+function openS(){
+	document.getElementById("sear").style.display="block";
+}
+
+function closeS(){
+	document.getElementById("sear").style.display="none";
+}
+</script>
+
+
+</body>
+</html>
